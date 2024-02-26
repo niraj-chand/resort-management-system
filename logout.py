@@ -81,7 +81,8 @@ def logout():
             window.destroy()
             import login
         except:
-           pass
+           pass 
+        
 #home
 image1 = PhotoImage(file="Icons/Standard1.png")
 label = Label(window, text="STANDARD ROOM", image=image1, compound="center",fg="black",font=("sans serif",19,"bold"))
@@ -113,4 +114,4 @@ Button(image=icon7,compound=LEFT,text='PROFILE',font=('Times',17,'bold'),fg='#00
 Button(image=icon8,compound=LEFT,text='LOG OUT',font=('Times',17,'bold'),fg='#00008b',bg='light blue',activebackground='white',activeforeground='black',relief=GROOVE,cursor="hand2",command=logout).place(x=3,y=641,height=65,width=312)
 
 Button(image=icon9,fg='#00008b',bg='#f0f8ff',activebackground='white',activeforeground='black',relief=GROOVE,cursor="hand2",command=open_nots).place(x=1430,y=100,height=33,width=33)
-window.mainloop()
+window.mainloop()   
