@@ -1,5 +1,4 @@
-
-
+#mine niraj chand
 from tkinter import *
 from PIL import Image, ImageTk
 import sqlite3
@@ -7,7 +6,7 @@ from tkinter import messagebox
 
 
 window=Tk()
-window.geometry("1280x720")
+window.geometry("1400x720")
 window.title("PROFILE")
 window.minsize(width=200,height=200)
 Photo= Image.open("bg6.png")

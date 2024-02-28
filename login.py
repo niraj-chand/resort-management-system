@@ -7,7 +7,7 @@ from PIL import Image, ImageTk
 
 #creating a window
 window=Tk()
-window.geometry("1260x710")
+window.geometry("1400x700")
 window.title("Green village-login")
 window.iconbitmap(r'icon.ico')
 window.minsize(width=200,height=200)

@@ -1,3 +1,4 @@
+#import required modules
 import sqlite3
 from tkinter import *
 from tkinter import messagebox
@@ -170,7 +171,7 @@ def bill():
 
         #frame and label for toplevel
         Frame(top,bg='#b0c4de',height=400,width=400).place(x=0,y=0)
-[ Tuesday, February 27, 2024 6:14 PM ] ⁨Niraj Chand⁩: Label(top, text='CONFIRM TRANSACTION', bg="#b0c4de", fg='#1d2951', font=('Arial',20,'bold')).place(x=22, y=20)
+        Label(top, text='CONFIRM TRANSACTION', bg="#b0c4de", fg='#1d2951', font=('Arial',20,'bold')).place(x=22, y=20)
 
         #remove customer data after bill payment
         def removedata():
@@ -342,8 +343,7 @@ Label(window,text="GREEN VILLAGE RESORT",font=('Alegreya sans',15,'bold'),bg='wh
 Label(window,text="Baneshwor, Kathmandu",font=('Times',14,),bg='white').place(x=967,y=295)
 Label(window,text="Phone: 9809416671, 9762485642",font=('Times',10),bg='white').place(x=965,y=320)
 #Entry and button to get bill of individual customer
-search=Entry(window,relief=SOLID
-[ Tuesday, February 27, 2024 6:15 PM ] ⁨Niraj Chand⁩: )
+search=Entry(window,relief=SOLID)
 search.place(x=520,y=200,height=28,width=175)
 Button(window, text="Get Bill",font=('Arial',8,'bold'),fg='white',bg="#1d2951",width=8,height=1,cursor='hand2',command=bill).place(x=700,y=201)
 

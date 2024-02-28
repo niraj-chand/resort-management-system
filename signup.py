@@ -6,7 +6,7 @@ import sqlite3
 
 #creating window
 window=Tk()
-window.geometry("1260x710")
+window.geometry("1400x700")
 window.title("Green village -sign up")
 window.iconbitmap(r'icon.ico')
 window.minsize(width=200,height=200)
@@ -142,7 +142,7 @@ def signup():
         elif "@" and ".com" not in c:
             messagebox.showerror("Signup","Invalid Email")
         elif len(e)<6 or len(f)<6:
-            messagebox.showerror("Signup","Password must be more than 6 characters")
+            messagebox.showerror("Signup","Password must be more than 5 characters")
         elif len(d)!=10:
             messagebox.showerror("Signup","Invalid Phone Number Length")
         elif e!=f:
@@ -169,13 +169,13 @@ def signup():
         
         Label(text="Security Questions",font=('Arial',16,'bold'),bg='white',fg='#1d2951').place(x=1065,y=290)
 
-        Label(text="Q1: What is your favourite music genre?",bg='white').place(x=1014,y=333)
+        Label(text="Q1: What is your favourite anime?",bg='white').place(x=1014,y=333)
         Entry(window, textvariable=a).place(x=1014, y=363, width=290, height=30)
         
         Label(text="Q2: What is your favourite sport?",bg='white').place(x=1014 ,y=403)
         Entry(window, textvariable=b).place(x=1014, y=433, width=290, height=30)
 
-        Label(text="Q3: What do you want to be when you were child?",bg='white').place(x=1014,y=473)
+        Label(text="Q3: Who is your favourite villian",bg='white').place(x=1014,y=473)
         Entry(window,textvariable=d).place(x=1014, y=503, width=290, height=30)
 
         #verification for security questions
@@ -214,7 +214,7 @@ def signup():
             openlogin()
 
         #signup button
-       
+
         Button(window,text="SIGN UP", width=32,font=('Arial',13,'bold'),fg='white',bg="#483d8b",cursor='hand2',command=verify2).place(x=995,y=580,height=33)
        
 signup()
